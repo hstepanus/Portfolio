@@ -1,0 +1,11 @@
+portfolio/
+│── index.html
+│
+├── assets/
+│   ├── images/
+│   │   ├── novec_dashboard.png
+│   │   ├── park_app.png
+│   │   └── nitrate.png
+│   │
+│   ├── resume/
+│   │   └── Henry_Stepanus_Resume.pdf
