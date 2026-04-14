@@ -330,6 +330,7 @@
       justify-content: space-between;
       gap: 12px;
       align-items: end;
+      flex-wrap: wrap;
     }
 
     .overlay-chip {
@@ -351,19 +352,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
-    }
-
-    .placeholder {
-      position: absolute;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-weight: 800;
-      background:
-        linear-gradient(135deg, rgba(20,58,123,0.07), rgba(214,239,67,0.12));
     }
 
     .section {
@@ -580,6 +568,29 @@
       padding: 26px;
     }
 
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid #e2ebf6;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .contact-link span {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
     .footer {
       padding: 18px 0 40px;
       color: var(--muted);
@@ -789,7 +800,7 @@
             <img src="park_app.png" alt="Park reporting app screenshot" />
           </div>
           <div class="shot">
-          <img src="bivariatemap_chargerAvaibility.png" alt="Bivariate map" />
+            <img src="bivariatemap_chargerAvaibility.png" alt="EV charger availability bivariate map" />
           </div>
         </div>
       </div>
@@ -843,7 +854,7 @@
             </div>
 
             <div class="project-actions">
-              <a class="btn btn-primary" href="https://hstepanus.github.io/Geog778_FinalProject/" target="_blank">
+              <a class="btn btn-primary" href="https://hstepanus.github.io/Geog778_FinalProject/" target="_blank" rel="noreferrer">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M14 3h7v7"></path>
                   <path d="M10 14L21 3"></path>
@@ -852,7 +863,7 @@
                 Launch Live App
               </a>
 
-              <a class="btn btn-accent" href="https://github.com/hstepanus/Geog778_FinalProject" target="_blank">
+              <a class="btn btn-accent" href="https://github.com/hstepanus/Geog778_FinalProject" target="_blank" rel="noreferrer">
                 <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.74-1.56-2.56-.29-5.25-1.29-5.25-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.19 1.19a10.98 10.98 0 0 1 5.81 0c2.21-1.5 3.18-1.19 3.18-1.19.64 1.58.24 2.76.12 3.05.74.81 1.18 1.85 1.18 3.12 0 4.47-2.7 5.45-5.28 5.74.42.36.79 1.07.79 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56 4.56-1.53 7.84-5.83 7.84-10.92C23.5 5.66 18.35.5 12 .5z"/>
                 </svg>
@@ -889,4 +900,314 @@
           <div class="card panel">
             <h3>
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#143a7b" stroke-width="2">
-                <path d="
+                <path d="M4 6h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 18h10"></path>
+              </svg>
+              Key Features
+            </h3>
+            <ul class="checklist">
+              <li>Layered EV, solar, service area, and charger datasets</li>
+              <li>Executive-style dashboard layout with responsive design</li>
+              <li>Hotspot and cluster outputs for planning insight</li>
+              <li>Visual storytelling for non-technical stakeholders</li>
+            </ul>
+          </div>
+
+          <div class="card panel">
+            <h3>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#143a7b" stroke-width="2">
+                <path d="M4 19h16"></path>
+                <path d="M7 16V8"></path>
+                <path d="M12 16V5"></path>
+                <path d="M17 16v-4"></path>
+              </svg>
+              Stack
+            </h3>
+            <p>
+              ArcGIS Pro, PostGIS, Python, Leaflet, GeoJSON, GitHub Pages, and cartographic design principles shaped the final product and presentation-ready UI.
+            </p>
+          </div>
+
+          <div class="card panel">
+            <h3>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#143a7b" stroke-width="2">
+                <path d="M12 2l3 6 6 .8-4.4 4.3 1 6.1-5.6-3-5.6 3 1-6.1L3 8.8 9 8z"></path>
+              </svg>
+              Impact
+            </h3>
+            <p>
+              The result is a portfolio-level GIS product that communicates technical capability and executive clarity at the same time, making it suitable for hiring managers, mentors, and utility audiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h7v7H4z"></path>
+              <path d="M13 4h7v7h-7z"></path>
+              <path d="M4 13h7v7H4z"></path>
+              <path d="M13 13h7v7h-7z"></path>
+            </svg>
+            Additional Projects
+          </div>
+          <h2 class="section-title">Selected GIS and web mapping work</h2>
+          <p>
+            A mix of analysis, application design, and visual communication projects demonstrating spatial problem-solving across public infrastructure, reporting, and geospatial storytelling.
+          </p>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="card small-card project-card">
+          <div class="project-media">
+            <img src="park_app.png" alt="Park app preview" />
+          </div>
+          <div class="project-body">
+            <div class="kicker">Mobile Web App • Public Reporting</div>
+            <h3>Park Reporting App</h3>
+            <p>
+              A mobile-friendly reporting app designed to help visitors identify facilities, navigate the park, and submit issues in a clear and accessible interface.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Leaflet</span>
+              <span class="tag">GeoJSON</span>
+              <span class="tag">Responsive UI</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card small-card project-card">
+          <div class="project-media">
+            <img src="bivariatemap_chargerAvaibility.png" alt="Bivariate GIS map preview" />
+          </div>
+          <div class="project-body">
+            <div class="kicker">Cartography • Spatial Analysis</div>
+            <h3>Bivariate Accessibility Map</h3>
+            <p>
+              A thematic map exploring charger availability alongside related geographic variables to reveal spatial disparities and support interpretive communication.
+            </p>
+            <div class="tag-row">
+              <span class="tag">ArcGIS Pro</span>
+              <span class="tag">Symbology</span>
+              <span class="tag">Layout Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card small-card project-card">
+          <div class="project-media">
+            <img src="novec_dashboard.png" alt="NOVEC dashboard project preview" />
+          </div>
+          <div class="project-body">
+            <div class="kicker">Dashboard • Utility GIS</div>
+            <h3>Clean-Energy Adoption Explorer</h3>
+            <p>
+              A planning-focused GIS concept for exploring EV adoption, solar customers, and infrastructure readiness in a service territory context.
+            </p>
+            <div class="tag-row">
+              <span class="tag">PostGIS</span>
+              <span class="tag">Planning Support</span>
+              <span class="tag">Storytelling</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+            Core Skills
+          </div>
+          <h2 class="section-title">Technical strengths</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card panel">
+          <h3>GIS & Spatial Analysis</h3>
+          <div class="skill-list">
+            <div class="skill-item"><strong>ArcGIS Pro</strong><span>Analysis & cartography</span></div>
+            <div class="skill-item"><strong>Spatial Statistics</strong><span>Hotspots, Moran’s I, LISA</span></div>
+            <div class="skill-item"><strong>Geoprocessing</strong><span>Python and model workflows</span></div>
+            <div class="skill-item"><strong>Cartographic Design</strong><span>Presentation-ready map products</span></div>
+          </div>
+        </div>
+
+        <div class="card panel">
+          <h3>Data & Development</h3>
+          <div class="skill-list">
+            <div class="skill-item"><strong>PostgreSQL / PostGIS</strong><span>Spatial schema and queries</span></div>
+            <div class="skill-item"><strong>Python</strong><span>Automation and analytics</span></div>
+            <div class="skill-item"><strong>Leaflet / Web GIS</strong><span>Interactive application UI</span></div>
+            <div class="skill-item"><strong>GitHub Pages</strong><span>Portfolio and project hosting</span></div>
+          </div>
+        </div>
+
+        <div class="card panel">
+          <h3>Professional Value</h3>
+          <div class="skill-list">
+            <div class="skill-item"><strong>Utility GIS</strong><span>Infrastructure and planning context</span></div>
+            <div class="skill-item"><strong>Dashboard Design</strong><span>Executive-facing presentation</span></div>
+            <div class="skill-item"><strong>Storytelling</strong><span>Clear communication of results</span></div>
+            <div class="skill-item"><strong>Portfolio Design</strong><span>Modern visual presentation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+              <path d="M16 2v4"></path>
+              <path d="M8 2v4"></path>
+              <path d="M3 10h18"></path>
+            </svg>
+            Experience & Education
+          </div>
+          <h2 class="section-title">Professional and academic highlights</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="card timeline-card">
+          <div class="timeline-head">
+            <strong>Northern Virginia Electric Cooperative (NOVEC)</strong>
+            <span>GIS Analyst / Utility GIS</span>
+          </div>
+          <ul>
+            <li>Support utility mapping, spatial analysis, and infrastructure-focused GIS workflows.</li>
+            <li>Work with geospatial data to improve operational awareness and planning support.</li>
+            <li>Contribute to projects related to EV, solar, service territory, and spatial decision support.</li>
+          </ul>
+        </div>
+
+        <div class="card timeline-card">
+          <div class="timeline-head">
+            <strong>University of Wisconsin–Madison</strong>
+            <span>Master’s in GIS Development</span>
+          </div>
+          <ul>
+            <li>Advanced coursework in GIS development, analytics, web mapping, and spatial systems.</li>
+            <li>Produced portfolio-grade projects combining GIS, code, databases, and cartographic communication.</li>
+            <li>Focused on applied problem solving for infrastructure, planning, and geospatial UX.</li>
+          </ul>
+        </div>
+
+        <div class="card timeline-card">
+          <div class="timeline-head">
+            <strong>Arizona State University</strong>
+            <span>Bachelor’s in GIS • Minor in Urban Planning</span>
+          </div>
+          <ul>
+            <li>Built a strong foundation in spatial thinking, mapping, and planning-oriented GIS applications.</li>
+            <li>Developed an interest in using GIS as a bridge between data, design, and real-world decision making.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <div class="eyebrow">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16v16H4z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+            Let’s Connect
+          </div>
+          <h2 class="section-title" style="margin-top:16px;">Interested in GIS, web mapping, or spatial analytics work?</h2>
+          <p class="lead" style="margin-top:14px; max-width: 60ch;">
+            I’m open to connecting about GIS development, spatial analysis, cartography, and geospatial product design. This portfolio is built to show both technical depth and polished communication.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hstepanus@yahoo.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16v16H4z"></path>
+                <path d="M22 6l-10 7L2 6"></path>
+              </svg>
+              Email Me
+            </a>
+            <a class="btn btn-accent" href="https://github.com/hstepanus" target="_blank" rel="noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.74-1.56-2.56-.29-5.25-1.29-5.25-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.19 1.19a10.98 10.98 0 0 1 5.81 0c2.21-1.5 3.18-1.19 3.18-1.19.64 1.58.24 2.76.12 3.05.74.81 1.18 1.85 1.18 3.12 0 4.47-2.7 5.45-5.28 5.74.42.36.79 1.07.79 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56 4.56-1.53 7.84-5.83 7.84-10.92C23.5 5.66 18.35.5 12 .5z"/>
+              </svg>
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+
+        <div class="card contact-card">
+          <h3>Contact details</h3>
+          <div class="contact-list">
+            <a class="contact-link" href="mailto:hstepanus@yahoo.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16v16H4z"></path>
+                <path d="M22 6l-10 7L2 6"></path>
+              </svg>
+              <div>
+                hstepanus@yahoo.com<br />
+                <span>Email</span>
+              </div>
+            </a>
+
+            <a class="contact-link" href="https://github.com/hstepanus" target="_blank" rel="noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.74-1.56-2.56-.29-5.25-1.29-5.25-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.19 1.19a10.98 10.98 0 0 1 5.81 0c2.21-1.5 3.18-1.19 3.18-1.19.64 1.58.24 2.76.12 3.05.74.81 1.18 1.85 1.18 3.12 0 4.47-2.7 5.45-5.28 5.74.42.36.79 1.07.79 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56 4.56-1.53 7.84-5.83 7.84-10.92C23.5 5.66 18.35.5 12 .5z"/>
+              </svg>
+              <div>
+                github.com/hstepanus<br />
+                <span>Repository and project work</span>
+              </div>
+            </a>
+
+            <a class="contact-link" href="Henry_Stepanus_Resume.pdf" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <path d="M14 2v6h6"></path>
+                <path d="M8 13h8"></path>
+                <path d="M8 17h6"></path>
+              </svg>
+              <div>
+                Henry_Stepanus_Resume.pdf<br />
+                <span>Resume PDF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Henry K. Stepanus • GIS Portfolio • Built for professional presentation and project showcase
+    </div>
+  </footer>
+
+</body>
+</html>
