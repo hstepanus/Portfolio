@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Henry K. Stepanus | GIS Portfolio</title>
-  <meta name="description" content="GIS developer and spatial analyst portfolio showcasing web mapping, PostGIS analytics, cartography, and energy infrastructure projects." />
+  <meta
+    name="description"
+    content="GIS developer and spatial analyst portfolio showcasing web mapping, PostGIS analytics, cartography, and energy infrastructure projects."
+  />
   <style>
     :root {
       --bg: #f4f7fb;
@@ -24,6 +27,7 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -238,13 +242,21 @@
       min-height: 360px;
     }
 
-    .shot img {
+    .shot img,
+    .project-media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.4s ease;
     }
 
-    .shot .placeholder {
+    .shot:hover img,
+    .project-media:hover img {
+      transform: scale(1.03);
+    }
+
+    .shot .placeholder,
+    .project-media .placeholder {
       position: absolute;
       inset: 0;
       display: grid;
@@ -301,12 +313,6 @@
       background: linear-gradient(135deg, #eef5ff, #f9fbff);
       border-bottom: 1px solid #e3ebf6;
       position: relative;
-    }
-
-    .project-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
 
     .project-body {
@@ -441,6 +447,10 @@
 
     .timeline-card {
       padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
 
     .timeline-head {
@@ -477,6 +487,10 @@
 
     .contact-card {
       padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
 
     .contact-actions {
@@ -552,11 +566,6 @@
         padding-right: 18px;
       }
 
-      .map-badge-stack,
-      .nav-links {
-        gap: 12px;
-      }
-
       .btn {
         width: 100%;
       }
@@ -596,7 +605,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#featured">View Featured Project</a>
-          <a class="btn" href="#contact">Download Resume / Contact</a>
+          <a class="btn" href="Henry_Stepanus_Resume.pdf" target="_blank">Download Resume</a>
           <a class="btn btn-accent" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
         <div class="hero-highlights">
@@ -617,14 +626,14 @@
 
       <div class="hero-card hero-visual">
         <div class="shot main-shot">
-          <img src="novec_dashboard.png" alt="NOVEC Predictive Grid Dashboard">
+          <img src="novec_dashboard_.png" alt="NOVEC Predictive Grid dashboard screenshot">
         </div>
         <div class="shot-grid">
           <div class="shot">
-            <img src="park_app.png" alt="Park Reporting App">
+            <img src="park_app.png" alt="Park app project screenshot">
           </div>
           <div class="shot">
-            <div class="placeholder">Spatial Analysis / Cartography Project</div>
+            <div class="placeholder">Add another project screenshot here</div>
           </div>
         </div>
       </div>
@@ -646,7 +655,7 @@
       <div class="feature-grid">
         <article class="project-card">
           <div class="project-media">
-            <div class="placeholder">Featured dashboard image or screen recording cover</div>
+            <img src="novec_dashboard_.png" alt="NOVEC Predictive Grid featured dashboard">
           </div>
           <div class="project-body">
             <div class="kicker">Web GIS • Energy Infrastructure • Spatial Statistics</div>
@@ -662,9 +671,9 @@
               <span class="tag">Responsive Dashboard</span>
             </div>
             <div class="project-actions">
-              <a class="btn btn-primary" href="#">Launch Live App</a>
-              <a class="btn" href="#">View GitHub Repository</a>
-              <a class="btn" href="#">Read Executive Summary</a>
+              <a class="btn btn-primary" href="https://hstepanus.github.io/Geog778_FinalProject/" target="_blank">Launch Live App</a>
+              <a class="btn" href="https://github.com/hstepanus/Geog778_FinalProject" target="_blank">View GitHub Repository</a>
+              <a class="btn" href="Henry_Stepanus_Resume.pdf" target="_blank">View Resume</a>
             </div>
           </div>
         </article>
@@ -701,7 +710,9 @@
 
       <div class="projects-grid">
         <article class="project-card small-card">
-          <div class="project-media"><div class="placeholder">Park App screenshot</div></div>
+          <div class="project-media">
+            <img src="park_app.png" alt="Park reporting app">
+          </div>
           <div class="project-body">
             <div class="kicker">Mobile-Friendly Web Mapping</div>
             <h3>Park Reporting App</h3>
@@ -715,21 +726,25 @@
         </article>
 
         <article class="project-card small-card">
-          <div class="project-media"><div class="placeholder">Spatial analysis project</div></div>
+          <div class="project-media">
+            <img src="novec_dashboard_.png" alt="NOVEC dashboard alternate preview">
+          </div>
           <div class="project-body">
             <div class="kicker">Spatial Modeling</div>
-            <h3>Nitrate & Health Analysis</h3>
+            <h3>Clean Energy Spatial Analysis</h3>
             <p>Analytical mapping project connecting spatial patterns, explanatory data, and clear communication through map design.</p>
             <div class="tag-row">
               <span class="tag">ArcGIS Pro</span>
-              <span class="tag">Regression</span>
+              <span class="tag">PostGIS</span>
               <span class="tag">Cartography</span>
             </div>
           </div>
         </article>
 
         <article class="project-card small-card">
-          <div class="project-media"><div class="placeholder">StoryMap / narrative GIS</div></div>
+          <div class="project-media">
+            <div class="placeholder">Add another screenshot here</div>
+          </div>
           <div class="project-body">
             <div class="kicker">Narrative GIS</div>
             <h3>StoryMap Presentation Work</h3>
@@ -844,7 +859,7 @@
         </p>
         <div class="contact-actions">
           <a class="btn btn-primary" href="mailto:hstepanus@yahoo.com">Email Me</a>
-          <a class="btn" href="c:\Users\henry\OneDrive\Pictures\RESUME\Henry_Stepanus_ESRI_Style_Resume.pdf">Download Resume</a>
+          <a class="btn" href="Henry_Stepanus_Resume.pdf" target="_blank">Download Resume</a>
           <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
